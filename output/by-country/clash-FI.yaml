@@ -18,26 +18,26 @@ proxies:
   servername: fin.pinkmoon.pro
   client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: 65.109.189.128
-  port: 2086
-  udp: true
-  type: vmess
-  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
-  alterId: 0
-  cipher: auto
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 204.168.195.30
-  port: 51185
+  server: 144.31.126.220
+  port: 6543
   udp: true
   type: vless
-  uuid: 12af43c3-84b4-4248-878b-b75f35835487
+  uuid: dc7b22e7-508a-4cd4-94c6-334469189098
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: VFDbAJQdqzKl7hL6SmUrhHHEORtILSsJHYWF67an1HU
-    short-id: 55a464180d3b1f7e
-  servername: amp-api-edge.apps.apple.com
+    public-key: eBgbY5NYKPBmk6gEvU3DJrRdRoUAv965qZC6Zjy_Q3w
+    short-id: a4f8c92d
+  servername: cvedcdigital.vip
   client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
+  server: fr.vpn.legendaah.xyz
+  port: 36723
+  udp: true
+  type: hysteria2
+  password: Krab9Hyst2_Rk7pQ2xL
+  sni: 127.0.0.1
+  skip-cert-verify: true
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
   server: fin.pinkmoon.pro
   port: 443
@@ -64,14 +64,6 @@ proxies:
     short-id: beff3ff061a64cfd
   servername: fi-one.quiet-rogue.site
   client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  server: fr.vpn.legendaah.xyz
-  port: 36723
-  udp: true
-  type: hysteria2
-  password: Krab9Hyst2_Rk7pQ2xL
-  sni: 127.0.0.1
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -82,7 +74,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
   - 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -93,6 +84,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
   - 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 06 - xiaohe
 rules:
 - MATCH,PROXIES
