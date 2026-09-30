@@ -31,33 +31,21 @@ proxies:
   servername: Miro.com
   client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: sw-01.vacvps.com
-  port: 443
+  server: 2.27.13.61
+  port: 2096
   udp: true
   type: vless
-  uuid: 84a3061b-3573-4a3c-a631-f26c31209268
-  flow: xtls-rprx-vision
+  uuid: 11d826ce-d6e5-4154-8658-6829bb17dca2
   tls: true
-  reality-opts:
-    public-key: bDAry75taTMaPJII9vRrJuXAjQglTJxCOVWraQ5BozY
-  servername: sw-01.vacvps.com
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: 89.22.224.146
-  port: 43788
-  udp: true
-  type: vless
-  uuid: 6fbd9bd1-ccd4-4e2f-a918-a0f871965763
-  tls: true
-  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  servername: st6dbbc.rumedia-cdn.com
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /cdn/v3/live
     headers:
-      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
+      Host: st6dbbc.rumedia-cdn.com
+- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
   server: 89.125.114.9
   port: 443
   udp: true
@@ -79,7 +67,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -89,6 +76,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 05 - xiaohe
 rules:
 - MATCH,PROXIES
