@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  server: 109.206.241.10
-  port: 449
-  udp: true
-  type: trojan
-  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
-  sni: russiapower.accesscam.org
-  skip-cert-verify: true
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   server: 94.183.170.135
   port: 8443
   udp: true
@@ -21,7 +13,21 @@ proxies:
   tls: true
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
+  server: 104.18.35.15
+  port: 2096
+  udp: true
+  type: vless
+  uuid: f959a3fc-2e55-4bde-8ed4-4fab249f8733
+  tls: true
+  servername: krkt.388998.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /krktai00de
+    headers:
+      Host: krkt.388998.xyz
 proxy-groups:
 - name: PROXIES
   type: select
