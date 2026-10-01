@@ -15,26 +15,7 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe",
-      "server": "104.18.35.15",
-      "server_port": 2096,
-      "uuid": "f959a3fc-2e55-4bde-8ed4-4fab249f8733",
-      "tls": {
-        "enabled": true,
-        "server_name": "krkt.388998.xyz",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/krktai00de",
-        "headers": {
-          "Host": "krkt.388998.xyz"
+          "fingerprint": "firefox"
         }
       }
     },
@@ -43,16 +24,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe",
-        "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe"
+        "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe",
-        "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe"
+        "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
