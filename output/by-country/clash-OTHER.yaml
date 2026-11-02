@@ -5,21 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: www.ubuntuupdates.com
-  port: 443
+  server: 104.21.0.1
+  port: 2083
   udp: true
   type: vmess
-  uuid: 83b09a64-1eaf-4c4d-89ed-866d4b6b8115
+  uuid: ac251237-576f-40c8-a543-554960c958b1
   alterId: 0
   cipher: auto
   tls: true
-  servername: www.ubuntuupdates.com
+  servername: or3.sfacg.uk
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /truth
+    path: /or3
     headers:
-      Host: www.ubuntuupdates.com
+      Host: or3.sfacg.uk
 proxy-groups:
 - name: PROXIES
   type: select
