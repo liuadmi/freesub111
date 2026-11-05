@@ -5,17 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: 45.144.234.157
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
   server: 89.144.53.4
   port: 8445
   udp: true
@@ -28,8 +17,19 @@ proxies:
     short-id: 1a2b3c4d
   servername: videos.porsche.com
   client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
+  server: 45.144.234.157
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 104.18.0.1
+  server: 104.24.0.1
   port: 2053
   udp: true
   type: trojan
@@ -40,18 +40,18 @@ proxies:
   ws-opts:
     path: /
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: 6.bmi.ir.asopardaz.ir
-  port: 8443
+  server: 107.181.151.128
+  port: 443
   udp: true
   type: vless
-  uuid: 875942c6-1d42-4681-b49b-521a2bf10e8c
+  uuid: 88742d38-3f5c-4b9c-b256-7df5db8257ec
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs
-    short-id: e915
-  servername: timeline.www.cloudflare.com
-  client-fingerprint: chrome
+    public-key: zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s
+    short-id: 8f79726c5002
+  servername: www.mozilla.org
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
