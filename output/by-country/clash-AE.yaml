@@ -40,7 +40,7 @@ proxies:
     headers:
       Host: 95.174.68.188
 - name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
-  server: Sclass-00.catcat321.com
+  server: sclass-00.catcat321.com
   port: 20123
   udp: true
   type: trojan
@@ -48,7 +48,7 @@ proxies:
   sni: hk.catxstar.com
   skip-cert-verify: true
 - name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   udp: true
   type: vless
@@ -56,6 +56,8 @@ proxies:
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
